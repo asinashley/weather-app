@@ -7,6 +7,7 @@ function getWeather(response) {
   let windSpeed = document.querySelector("#wind");
   let time = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   city.innerHTML = response.data.city;
   description.innerHTML = response.data.condition.description;
@@ -14,8 +15,7 @@ function getWeather(response) {
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   time.innerHTML = formatDate(date);
   temperatureElemet = Math.round(temperature);
-
-  console.log(response.data.condition.description);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
