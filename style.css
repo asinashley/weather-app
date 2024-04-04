@@ -20,6 +20,8 @@ span {
 h1 {
   font-size: 50px;
   margin: 20px;
+  text-align: center;
+  color: #f05c7a;
 }
 .col {
   display: flex;
@@ -31,6 +33,7 @@ h1 {
 .card h1 {
   color: white;
   font-size: 60px;
+  text-align: left;
 }
 .card p {
   color: black;
