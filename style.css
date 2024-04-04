@@ -1,0 +1,86 @@
+body {
+  font-family: Cambria, Cochin;
+}
+.maincard {
+  background: rgba(255, 254, 254, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 720px;
+  box-shadow: -1px 16px 38px -9px rgba(0, 0, 0, 0.37);
+  padding: 40px;
+  border-radius: 20px;
+}
+span {
+  color: #f05c7a;
+}
+h1 {
+  font-size: 50px;
+  margin: 20px;
+}
+.col {
+  display: flex;
+  align-items: center;
+}
+.card span {
+  color: white;
+}
+.card h1 {
+  color: white;
+  font-size: 60px;
+}
+.card p {
+  color: black;
+  margin: 4px;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin: 20px;
+}
+.day p {
+  text-align: center;
+}
+.card {
+  margin-top: 20px;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: -1px 10px 20px -9px rgba(0, 0, 0, 0.37);
+  background-color: #ff999c;
+  background-image: radial-gradient(
+      at 89% 87%,
+      hsla(266, 95%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 39% 81%, #f05c99 0px, transparent 50%),
+    radial-gradient(at 78% 86%, hsla(262, 74%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 26%, hsla(324, 92%, 79%, 1) 0px, transparent 50%);
+}
+#button {
+  background-color: #f2778f;
+  box-shadow: -1px 10px 10px -9px rgba(0, 0, 0, 0.37);
+  color: white;
+  width: 100px;
+  border: 0px;
+  border-radius: 8px;
+  padding: 10px;
+}
+form {
+  margin: 20px 5px 40px 5px;
+}
+input {
+  border: 0;
+  background-color: rgb(226, 224, 224);
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+}
+footer {
+  margin-top: 30px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <div class="maincard">
+      <form action="search" id="search">
+        <input type="search" placeholder=" Enter your city" id="searchIput" />
+        <input type="submit" id="button" />
+      </form>
+      <div class="card">
+        <div class="flexbox">
+          <div class="col1">
+            <h1 class="city" id="city">Paris</h1>
+            <p>
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <span>66%</span>, Wind: <span>3.13km/h</span>
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/Sun cloud angled rain.png" alt="" />
+            <h1>21°C</h1>
+          </div>
+        </div>
+      </div>
+      <div class="flexbox">
+        <div class="day">
+          <p>
+            Mon <br />🌤 <br />
+            <span><strong>19°</strong> 21°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Tue <br />🌨<br />
+            <span><strong>16°</strong> 17°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Wed <br />🌤<br />
+            <span><strong>19°</strong> 20°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Thurs<br />☀<br />
+            <span><strong>20°</strong> 21°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Fri<br />☁<br />
+            <span><strong>19°</strong> 20°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Sat <br />⛈<br />
+            <span><strong>17°</strong> 19°</span>
+          </p>
+        </div>
+        <div class="day">
+          <p>
+            Sun <br />🌦<br />
+            <span><strong>19°</strong> 20°</span>
+          </p>
+        </div>
+      </div>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/matthieua/" target="_blank"> Ashley</a>, is
+        <a href="https://github.com/matthieua/meteo" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://meteo-shecodes-app.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
