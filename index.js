@@ -1,5 +1,5 @@
 function getWeather(response) {
-  let temperatureElemet = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let city = document.querySelector("#city");
   let description = document.querySelector("#description");
@@ -9,12 +9,12 @@ function getWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
+  temperatureElement.innerHTML = Math.round(temperature);
   city.innerHTML = response.data.city;
   description.innerHTML = response.data.condition.description;
   humidity.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
   time.innerHTML = formatDate(date);
-  temperatureElemet = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 function formatDate(date) {
